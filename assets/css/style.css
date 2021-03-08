@@ -74,26 +74,25 @@ h6 {
 }
 
 .note .section-title {
-  padding: 30px;
   margin-right: auto;
   margin-left: auto;
 }
 
 #note-title1 {
-  margin-top: 5%;
+  margin-top: 0.5%;
 }
 
 #note-title-last {
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 }
 
 .note-title {
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 .note-title h2 {
   display: inline-block;
-  font-size: 25px;
+  font-size: 22px;
   margin: auto;
   padding-bottom: 5px;
   color: oldlace;
@@ -114,7 +113,7 @@ h6 {
 .note-title .lists {
   margin: 2%;
   border-left: 2px solid oldlace;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .note-title .lists-inside {
@@ -141,11 +140,11 @@ h6 {
   z-index: 997;
   overflow-y: auto;
 }
-
+/* 
 #header {
   background: url("../img/pexels-tuesday-temptation-3780104.jpg") top right
     no-repeat !important;
-}
+} */
 
 #header * {
   transition: ease-in-out 0.3s;
@@ -237,6 +236,10 @@ h6 {
 
 #header.header-top .social-links,
 #header.header-top h2 {
+  display: none;
+}
+
+#header.header-top .nku-logo {
   display: none;
 }
 
@@ -426,7 +429,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   padding: 30px;
 }
 
@@ -1270,6 +1273,7 @@ section .container {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-bottom: 50px;
 }
 
 .myGallery img {
@@ -1304,4 +1308,182 @@ section .container {
 
 .myGallery .item:hover .caption {
   transform: translateY(0%);
+}
+
+/* Header */
+.nku-logo {
+  margin-top: 25px;
+}
+
+.nku-logo img {
+  width: 75px;
+  height: 50px;
+}
+
+#yellow-container {
+  /* background-color: #ffc72c; */
+}
+
+/*--------------------------------------------------------------
+# Whu Us
+--------------------------------------------------------------*/
+.why-us .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.why-us .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffc72c;
+}
+
+.why-us .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #6c665c;
+}
+
+.why-us .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us .box:hover {
+  background: #ffc72c;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.why-us .box:hover span,
+.why-us .box:hover h4,
+.why-us .box:hover p {
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about2 .content {
+  padding-left: 30px;
+}
+
+.about2 .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.about2 .content p {
+  margin-bottom: 0;
+}
+
+.about2 .content .icon-box {
+  margin-top: 25px;
+}
+
+.about2 .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+
+.about2 .content .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #4eb478;
+}
+
+.about2 .content .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
+.about2 .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+@media (max-width: 991px) {
+  .about2 {
+    padding-left: 0;
+  }
+  .about2 .image {
+    text-align: center;
+  }
+  .about2 .image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 667px) {
+  .about2 .image img {
+    max-width: 100%;
+  }
+}
+
+/* Table */
+#table {
+  margin-top: 30px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services2 {
+  padding-bottom: 30px;
+}
+
+.services2 .icon-box {
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  border-radius: 6px;
+  /* background: #fff; */
+}
+
+.services2 .icon-box i {
+  float: left;
+  color: #4eb478;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.services2 .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services2 .icon-box h4 a {
+  color: #dadad9;
+  transition: 0.3s;
+}
+
+/* .services2 .icon-box .icon-box:hover h4 a {
+  color: #4eb478;
+} */
+
+.services2 .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* About */
+.about .col-lg-6 {
+  width: 100% !important;
+}
+
+.about .myGallery {
+  margin-top: 50px;
 }
